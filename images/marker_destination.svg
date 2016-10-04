@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="20px" height="32px" viewBox="0 0 20 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.6.1 (26313) - http://www.bohemiancoding.com/sketch -->
+    <title>Pin icon</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Pin-icon" transform="translate(-1.000000, 0.000000)">
+            <g id="map_x5F_pin_x5F_fill">
+                <path d="M18.07,2.929 C14.164,-0.977 7.836,-0.977 3.929,2.929 C0.023,6.833 0.023,13.167 3.929,17.07 C3.929,17.07 10.995,24 10.995,32 C10.995,24 18.069,17.07 18.069,17.07 C21.977,13.168 21.977,6.833 18.07,2.929 L18.07,2.929 Z" id="Shape" fill="#005b9d"/>
+                <path d="M10.996,14.005 C8.789,14.005 7,12.216 7,10.005 C7,7.794 8.789,6.005 10.996,6.005 C13.211,6.005 15,7.794 15,10.005 C15,12.216 13.211,14.005 10.996,14.005 L10.996,14.005 Z" id="Path" fill="#FFFFFF"/>
+            </g>
+        </g>
+    </g>
+</svg>

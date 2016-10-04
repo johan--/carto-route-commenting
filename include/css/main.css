@@ -1,0 +1,294 @@
+﻿/* RESET */
+img {
+	border: none;
+}
+
+body, html, div, ul, ol, li, dl, dt, dd, h1, h2, h3, h4, h5, h6, pre, form, p, fieldset, input {
+	margin: 0;
+	padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, pre, code, address, caption, cite, code, th {
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* HTML5 DISPLAY RULE */
+header, nav, footer, article, aside, canvas, details, figcaption, figure, hgroup, menu, summary, section, figure {
+	display: block;
+}
+
+/*-------------------- UNIVERSAL ELEMENTS --------------------*/
+body {
+	font-family: "Open Sans", helvetica,arial,sans-serif;
+	font-size: 1em;
+	line-height: 1.25em;
+	color: #808285;
+}
+
+p {
+	margin: 7px 0px 15px 0px;
+}
+
+.no-wrap {
+	white-space: nowrap;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+
+html, body, #mapContainer {
+	height: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+a {
+	color: #808285;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+#infoToolbarContainer a, #infoToolbarContainer a:hover {
+	color: #ffffff;
+}
+#infoToolbarContainer {
+	display: block;
+	position: absolute;
+	top: -200px;
+	right: 50px;
+	width: 470px;
+	text-align: center;
+	color: #ffffff;
+	background: #005b9d;
+	z-index: 100;
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+}
+#infoToolbarContainer > div {
+	padding: 10px;
+}
+
+#infoToolbarContainer div.submit-route {
+	text-align: left;
+}
+#commentContainer {
+	padding-top: 10px;
+}
+#commentContainer .row {
+	clear: both;
+	padding: 10px 0;
+}
+#commentContainer .row input, #commentContainer .row textarea {
+	width: 100%;
+}
+/*#commentContainer .row .label {
+	width: 25%;
+	padding-right: 5px;
+	float: left;
+}*/
+#commentContainer .row .label, #commentContainer .row .data {
+	width: 95%;
+	float: left;
+}
+#commentContainer .row  .label  {
+	padding-bottom: 6px;
+}
+#commentContainer .action-buttons {
+	text-align: center;
+	padding-top: 20px;
+}
+/* Dialogs */
+.cartodb-popup-close-button {
+	position: absolute;
+	top: -13px;
+	right: -16px;
+	width: 26px;
+	height: 26px;
+	background: url('http://libs.cartodb.com/cartodb.js/v3/themes/img/light.png') no-repeat 0 -23px;
+	text-indent: -9999px;
+	font-size: 0;
+	line-height: 0;
+	opacity: 1;
+	text-transform: uppercase;
+	z-index: 3;
+}
+
+.cartodb-popup-tip-container {
+	position: absolute;
+	bottom: -4px;
+	left: 23px;
+	width: 16px;
+	height: 14px;
+	background: url('http://libs.cartodb.com/cartodb.js/v3/themes/img/light.png') no-repeat -23px -7px;
+	text-indent: -9999px;
+	font-size: 0;
+	line-height: 0;
+	opacity: 1;
+	z-index: 1;
+	/*display: none;*/
+}
+
+.info-dialog {
+	font-family: "Open Sans",helvetica,arial,sans-serif;
+	max-width: 300px;
+	min-width: 200px;
+	min-height: 100px;
+	height: auto;
+	background-color: #ffffff;
+	padding: 0px;
+	margin-bottom: 10px;
+	z-index: 3;
+	border-radius: 2px;
+	box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.15);
+}
+
+.info-dialog .heading {
+	background-color: #005b9d;
+	color: #ffffff;
+	padding: 0 0 10px 0;
+}
+.info-dialog .heading .title {
+	font-size: 1.5em;
+}
+	
+.info-dialog .heading .subtitle {
+	font-size: 1em;
+	font-weight: bold;
+}
+
+.info-dialog .dialog-content > div {
+	clear: both;
+	padding: 0px 10px 0px 10px;
+}
+
+.info-dialog .description, .info-dialog .row {
+	padding-top: 2px !important;
+	padding-bottom: 2px !important;
+}
+	
+.info-dialog h3 {
+	clear: both;
+	background-color: #E7E6E6;
+	padding: 5px 10px 5px 10px;
+	text-transform: uppercase;
+	font-size: 1em;
+}
+.info-dialog .row span.label {
+	font-weight: bold;
+}
+/* CUSTOM Leaftlet overrides */
+.marker-origin, .marker-destination {
+    color: #fff;
+    font-weight: bold;
+}
+.marker-origin {
+    background: #fff none repeat scroll 0 0;
+    border: 5px solid #005b9d;
+    border-radius: 99px;
+    height: 8px !important;
+    width: 8px !important;
+}
+
+.marker-destination {
+    background: #fff none repeat scroll 0 0;
+    border: 5px solid #000000;
+    border-radius: 99px;
+    height: 8px !important;
+    width: 8px !important;
+}
+
+.marker-line-point {
+    background: #005b9d none repeat scroll 0 0;
+    /*border: 5px solid #005b9d;*/
+    border-radius: 99px;
+    height: 8px !important;
+    width: 8px !important;
+    margin-left: -2px;
+    margin-top: -2px;
+}
+.path-car {
+    pointer-events: none;
+    stroke-opacity: .8;
+    stroke: #005b9d;
+    stroke-linecap: round;
+    stroke-width: 5px;
+}
+.path-walk, .path-bicycle {
+	visibility: hidden;
+}
+.leaflet-draw-tooltip::before {
+	 border-right: 6px solid rgba(0, 91, 157, 0.8);
+}
+.leaflet-draw-tooltip {
+	background: rgba(0, 91, 157, 0.8) none repeat scroll 0 0;
+}
+.leaflet-draw-toolbar a, .leaflet-draw-toolbar a:hover {
+	height: 28px;
+	width: 28px;
+}
+.leaflet-draw-toolbar .leaflet-draw-edit-edit.leaflet-disabled {
+	background-position: -211px -2px;
+}
+.leaflet-draw-toolbar .leaflet-draw-edit-edit {
+    background-position: -151px -2px;
+}
+.leaflet-draw-toolbar .leaflet-draw-draw-marker {
+	 background-position: -121px -2px;
+}
+span.leaflet-draw-tooltip-subtext {
+	color: #fcfe5c;
+}
+
+/* Always hide the draw actions / edit button */
+.leaflet-draw-actions, .leaflet-draw-edit-edit {
+	display: none !important;
+}
+.leaflet-draw-draw-marker {
+	display: block !important;
+}
+
+
+.leaflet-edit-marker-selected {
+	background: rgba(168, 169, 79, 0.10) none repeat scroll 0 0;
+	border: 5px dashed rgba(0, 148, 255, .8);		
+}
+
+.marker-origin.leaflet-edit-marker-selected, .marker-destination.leaflet-edit-marker-selected {
+	padding: 3px;	
+}
+
+.cartodb-legend-stack {
+	left: 20px !important;
+	right: auto !important;
+}
+/* Kendo override */
+
+.k-primary, .k-primary:focus  {
+	background-color: #272829;
+	border-color: #272829;
+}
+.k-primary:hover, .k-primary:active, .k-primary.k-state-focused, .k-primary:active:hover  {
+	background-color: #393a3c;
+	border-color: #393a3c;
+}
+.k-radio-label {
+	padding-right: 10px;
+}
+
+.k-window {
+	text-align: center;
+}
+.k-window-titlebar {
+	background-color: #005b9d;
+	color: #ffffff;
+	padding-bottom: 0.5em;
+}
+.k-window .k-content {
+	font-size: .75em;
+}
